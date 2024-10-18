@@ -1,0 +1,9 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 1111
+    url: jdbc:mysql://localhost:3306/newssite?createDatabaseIfNotExist=true
