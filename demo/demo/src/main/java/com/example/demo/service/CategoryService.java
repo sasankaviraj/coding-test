@@ -7,4 +7,5 @@ public interface CategoryService {
 
     ResponseEntity<?> save(CategoryDto categoryDto);
     ResponseEntity<?> get();
+    ResponseEntity<?> getById(Long id);
 }

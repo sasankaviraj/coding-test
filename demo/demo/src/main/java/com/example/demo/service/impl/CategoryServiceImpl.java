@@ -30,4 +30,9 @@ public class CategoryServiceImpl implements CategoryService {
         return new ResponseEntity<>(all, HttpStatus.OK);
     }
 
+    @Override
+    public ResponseEntity<?> getById(Long id) {
+        return new ResponseEntity<>(categoryRepository.findById(id), HttpStatus.OK);
+    }
+
 }
